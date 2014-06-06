@@ -7,8 +7,7 @@
 /**
  * Implements hook_preprocess_block().
  */
-function prototype_preprocess_block(&$vars) {
-
+function dcco2014_preprocess_block(&$vars) {
   // Set shortcut variables. Hooray for less typing!
   $block_id = $vars['block']->module . '-' . $vars['block']->delta;
   $classes = &$vars['classes_array'];

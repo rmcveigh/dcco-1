@@ -7,7 +7,7 @@
 /**
  * Implements hook_form_alter().
  */
-function prototype_form_alter(&$form, &$form_state, $form_id) {
+function dcco14_form_alter(&$form, &$form_state, $form_id) {
 
   // Add placeholder text to a form.
   if ($form_id == 'search_block_form') {

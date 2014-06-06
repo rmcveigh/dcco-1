@@ -8,7 +8,7 @@
 /**
  * Implements hook_preprocess_field().
  */
-function prototype_preprocess_field(&$vars) {
+function dcco14_preprocess_field(&$vars) {
 
   // Set shortcut variables. Hooray for less typing!
   $name = $vars['element']['#field_name'];

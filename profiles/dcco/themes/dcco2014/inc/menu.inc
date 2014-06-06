@@ -7,7 +7,7 @@
 /**
  * Overrides theme_menu_tree().
  */
-function prototype_menu_tree__main_menu($variables) {
+function dcco14_menu_tree__main_menu($variables) {
   return '<ul class="nav nav-inline">' . $variables['tree'] . '</ul>';
 }
 
