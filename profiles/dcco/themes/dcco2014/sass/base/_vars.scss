@@ -52,7 +52,7 @@ $gray-green:            #50625c;
 // Semantic color.
 //----------------------------------------------------------------------------
 $clr-neutral:      $gray;      // Default nuetral color
-$clr-text:         $gray;     // Default body copy color
+$clr-text:         $gray-green;     // Default body copy color
 $clr-link:         $teal;     // Default link color
 $clr-link_hover:   $teal-dark;     // Default link color
 $clr-accent:       $teal;     // Default accent color
@@ -67,9 +67,6 @@ $clr-table-even:   transparent;      // Default table even row color
 // Typefaces.
 //----------------------------------------------------------------------------
 $ff-mono:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Courier, monospace;;
-$ff-sans:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-$ff-serif: Georgia, serif;
-
 $ff-heading:  "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ff-sans:  "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $ff-serif: Georgia, "Times New Roman", Times, serif;
@@ -77,7 +74,6 @@ $ff-serif: Georgia, "Times New Roman", Times, serif;
 // Semantic fonts.
 //----------------------------------------------------------------------------
 $ff-body:    $ff-sans;
-// $ff-heading: "Open Sans", $ff-sans;
 $ff-display: $ff-heading;
 
 // Font size.

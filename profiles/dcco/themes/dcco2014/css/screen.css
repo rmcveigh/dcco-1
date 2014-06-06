@@ -1,5 +1,5 @@
 .icon-sprite {
-  background: url('../img/icon-s419a39d16a.png') no-repeat;
+  background: url('../img/icon-s0d0719499c.png') no-repeat;
 }
 
 .clearfix {
@@ -273,7 +273,7 @@ html {
 }
 
 body {
-  color: #999999;
+  color: #50625c;
 }
 
 div,
@@ -363,6 +363,7 @@ a:hover {
 
 p {
   margin: 0 0 0.75em;
+  max-width: 45em;
 }
 
 blockquote {
@@ -547,6 +548,14 @@ tr.even {
   }
 }
 
+body {
+  background: url('../img/splash/background-splash.jpg?1402065675') 50% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 #footer {
   padding: 1.5em 0;
 }
@@ -661,7 +670,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.3125em;
   line-height: 1.42857em;
   margin-bottom: 1.14286em;
-  color: #999999;
+  color: #50625c;
   font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
@@ -1128,7 +1137,7 @@ div.password-confirm {
   font-size: 0.8125em;
   line-height: 1.38462em;
   font-weight: bold;
-  color: #7f7f7f;
+  color: #3c4945;
 }
 
 /* No files to import found in components/menu/* */

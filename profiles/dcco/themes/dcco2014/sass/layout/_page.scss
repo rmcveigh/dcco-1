@@ -15,3 +15,11 @@
     margin: 0 auto;
   }
 }
+
+body {
+  @include background(image-url("splash/background-splash.jpg") 50% 50% fixed);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

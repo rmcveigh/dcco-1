@@ -1,5 +1,5 @@
 .icon-sprite {
-  background: url('../img/icon-s419a39d16a.png') no-repeat;
+  background: url('../img/icon-s0d0719499c.png') no-repeat;
 }
 
 .clearfix {
@@ -273,7 +273,7 @@ html {
 }
 
 body {
-  color: #999999;
+  color: #50625c;
 }
 
 div,
@@ -363,6 +363,7 @@ a:hover {
 
 p {
   margin: 0 0 0.75em;
+  max-width: 45em;
 }
 
 blockquote {
