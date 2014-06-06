@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the DCCO Landing Promo feature.
  */
+
+include_once 'dcco_landing_promo.features.inc';
