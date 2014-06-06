@@ -46,6 +46,7 @@ $teal:                  #01986c;
 $teal-dark:             #017864;
 $teal-darker:           #00585c;
 $teal-darkest:          #001d20;
+$teal-black:            #002a2c;
 
 $gray-green:            #50625c;
 
@@ -81,7 +82,7 @@ $ff-display: $ff-heading;
 $fs-xxs:     12px;
 $fs-xs:      13px;
 $fs-s:       14px;
-$fs-m:       16px;
+$fs-m:       18px;
 $fs-l:       21px;
 $fs-xl:      24px;
 $fs-xxl:     28px;
@@ -150,9 +151,9 @@ $radius-l: 50%;
 
 // Button settings.
 //----------------------------------------------------------------------------
-$clr-btn--primary:   $gray;
-$clr-btn--secondary: $gray-dark;
-$clr-btn--tertiary:  $gray-light;
+$clr-btn--primary:   $teal;
+$clr-btn--secondary: $teal-black;
+$clr-btn--tertiary:  $teal-light;
 $btn-style: 'none';
 $btn-highlight-strength: .5;
 $btn-shadow-strength: .5;

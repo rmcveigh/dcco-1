@@ -4,8 +4,16 @@
 // ---------------------------------------------------------------------------
 @mixin button {
   @include inline-block;
+  @include border-radius(3px);
+  border: none;
+  color: $white;
+  font-family: $ff-display;
+  font-weight: bold;
+  letter-spacing: .1em;
+  text-transform: uppercase;
 
   &:hover {
+    color: $teal-lightest;
     text-decoration: none;
   }
 }
@@ -13,18 +21,18 @@
 // Button sizes
 // ---------------------------------------------------------------------------
 @mixin button--tiny {
-  padding: rhythm(.25, $fs-xxs) 6px;
   @include adjust-font-size-to($fs-xxs);
+  padding: rhythm(.25, $fs-xxs) 6px;
 }
 
 @mixin button--small {
-  padding: rhythm(.5, $fs-xxs) 10px;
   @include adjust-font-size-to($fs-xxs);
+  padding: rhythm(.5, $fs-xxs) 10px;
 }
 
 @mixin button--medium {
-  padding: rhythm(.5, $fs-l) 13px;
-  @include adjust-font-size-to($fs-m, 4);
+  @include adjust-font-size-to($fs-l, 4);
+  padding: rhythm(2, $fs-l) rhythm(6, $fs-l);
 }
 
 @mixin button--large {
@@ -36,22 +44,27 @@
 // Button colors
 // ---------------------------------------------------------------------------
 @mixin button--primary {
-  background-color: $clr-btn--primary;
+  background: $teal;
 
   &:hover {
+    background: $teal-light;
   }
 
   &:active {
+    background: $teal-dark;
   }
 }
 
 @mixin button--secondary {
-  background-color: $clr-btn--secondary;
+  background: $teal-black;
+  background: rgba($teal-black, .8);
 
   &:hover {
+    background: $teal-darkest;
   }
 
   &:active {
+    background: $teal-black;
   }
 }
 

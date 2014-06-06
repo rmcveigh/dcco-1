@@ -8,12 +8,10 @@
 
 // Set the page width.
 .l--constrained {
+  margin: 0 auto;
+  max-width: 90%;
   padding: 0 $w-gutter-half;
-
-  @include breakpoint($desktop) {
-    width: $w-full;
-    margin: 0 auto;
-  }
+  width: $w-full;
 }
 
 body {

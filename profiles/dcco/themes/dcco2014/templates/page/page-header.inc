@@ -1,9 +1,7 @@
 <header id="header">
   <div class="l--constrained clearfix">
-    <h1>DrupalCamp Colorado</h1>
-    <h2>August 2-5</h2>
     <div id="branding">
-      <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><?php if ($logo): ?><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /><?php elseif ($site_name): ?><?php print $site_name; ?><?php endif; ?></a></h1>
+      <h1><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><?php print $site_name; ?></a></h1>
       <?php if ($site_slogan): ?>
         <h2 id="site-slogan">
          <?php print $site_slogan; ?>
@@ -28,3 +26,12 @@
     </div>
   </div>
 <?php endif; // end navigation?>
+
+<?php if ($is_front): ?>
+  <div id="masthead">
+    <div class="l--constrained">
+      <img src="/profiles/dcco/themes/dcco2014/img/logo-dcco-white.png" alt="DrupalCamp Colorado 2014" />
+      <a href="#" class="button--secondary">Register</a>
+    </div>
+  </div>
+<?php endif; ?>

@@ -1,6 +1,6 @@
 body.styleguide .l--constrained {
-  padding-bottom: 3.75em;
-  padding-top: 3.75em;
+  padding-bottom: 3.33333em;
+  padding-top: 3.33333em;
 }
 
 h1.styleguide,
@@ -27,8 +27,8 @@ h2.styleguide {
 
 h3.styleguide {
   font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: 1.875em;
+  line-height: 1.33333em;
+  margin-bottom: 1.66667em;
   text-transform: uppercase;
 }
 
@@ -41,24 +41,24 @@ article.styleguide {
   overflow: hidden;
   *zoom: 1;
   clear: both;
-  padding: 1.875em;
+  padding: 1.66667em;
   padding-left: 200px;
 }
 article.styleguide > header.styleguide {
   float: left;
   margin-left: -200px;
-  padding-left: 1.875em;
+  padding-left: 1.66667em;
 }
 
 div.styleguide-color {
   float: left;
-  margin-bottom: 3em;
+  margin-bottom: 2.66667em;
   height: 100px;
   width: 100px;
   position: relative;
 }
 div.styleguide-color > strong {
-  font-size: 0.875em;
+  font-size: 0.77778em;
   line-height: 1.28571em;
   color: #666666;
   font-weight: bold;
@@ -68,7 +68,7 @@ div.styleguide-color > strong {
   margin-top: 0.42857em;
 }
 div.styleguide-color > span {
-  font-size: 0.875em;
+  font-size: 0.77778em;
   line-height: 1.28571em;
   color: #999999;
   position: absolute;
