@@ -8,6 +8,40 @@
 #header {
   background-color: $teal-black;
   padding: rhythm(1) 0;
+  position: relative;
+
+  //user menu
+
+  ul.nav {
+    width:100%;
+    list-style:none;
+    text-align:right;
+
+    > li {
+      float: none;
+      text-transform:uppercase;
+      cursor:pointer;
+      text-align:center;
+      width: auto;
+      display: inline-block;
+
+      > a {
+        text-decoration:none;
+        margin: 0 1em;
+        font-size: 1em;
+      }
+    }
+  }
+  .nav-toggle {
+    text-decoration:none;
+    color: $white;
+  }
+  .mobile-user-menu {
+    display: block;
+    position: absolute;
+    bottom: -41px;
+    right: 50px;
+  }
 }
 
 // Branding component
@@ -51,6 +85,25 @@
     @include breakpoint($tablet, $no-query: '.lt-ie9') {
       @include adjust-font-size-to($fs-xl, 4);
       padding: rhythm(3, $fs-xl) rhythm(12, $fs-xl);
+    }
+  }
+}
+
+// user menu small screens
+@media screen and (max-width: 640px) {
+
+  #header {
+    ul.nav {
+      padding:0 .5em;
+    }
+
+    ul.nav > li {
+      width:100%;
+      padding:.45em .25em;
+      margin:0 0 .55em 0;
+    }
+    #block-system-user-menu {
+      width: 100%;
     }
   }
 }

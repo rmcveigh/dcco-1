@@ -574,12 +574,83 @@ body {
 }
 
 #footer {
-  padding: 1.33333em 0;
+  padding: 0.66667em 0 0.33333em;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: -6px;
+}
+#footer #block-menu-menu-social-menu {
+  width: 100%;
+  border-bottom: 2px solid #00585c;
+}
+#footer #block-menu-menu-social-menu a {
+  text-decoration: none;
+  color: #3dd59e;
+}
+#footer #block-menu-menu-footer-menu {
+  float: left;
+}
+#footer #block-menu-menu-footer-menu ul.nav {
+  width: 100%;
+  list-style: none;
+  font-size: 0.8em;
+}
+#footer #block-menu-menu-footer-menu ul.nav > li {
+  float: none;
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+#footer #block-menu-menu-footer-menu ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5em 0 0;
+}
+#footer #block-system-powered-by {
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  padding-top: 5px;
+}
+#footer #block-system-powered-by a {
+  text-decoration: none;
+  color: #3dd59e;
 }
 
 #header {
   background-color: #002a2c;
   padding: 0.33333em 0;
+  position: relative;
+}
+#header ul.nav {
+  width: 100%;
+  list-style: none;
+  text-align: right;
+}
+#header ul.nav > li {
+  float: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+#header ul.nav > li > a {
+  text-decoration: none;
+  margin: 0 1em;
+  font-size: 1em;
+}
+#header .nav-toggle {
+  text-decoration: none;
+  color: white;
+}
+#header .mobile-user-menu {
+  display: block;
+  position: absolute;
+  bottom: -41px;
+  right: 50px;
 }
 
 #branding {
@@ -623,6 +694,19 @@ body {
   }
 }
 
+@media screen and (max-width: 640px) {
+  #header ul.nav {
+    padding: 0 .5em;
+  }
+  #header ul.nav > li {
+    width: 100%;
+    padding: .45em .25em;
+    margin: 0 0 .55em 0;
+  }
+  #header #block-system-user-menu {
+    width: 100%;
+  }
+}
 #main {
   background-color: white;
 }
@@ -641,6 +725,7 @@ body {
 
 #navigation {
   width: 100%;
+  padding-top: 1em;
 }
 #navigation ul {
   width: 100%;
@@ -664,6 +749,12 @@ body {
 #navigation ul > li.last {
   border-right: none;
 }
+#navigation .nav-toggle {
+  text-decoration: none;
+}
+#navigation .nav-toggle > .mobile-main-menu {
+  color: white;
+}
 
 /* small screens */
 @media screen and (max-width: 640px) {
@@ -674,9 +765,6 @@ body {
     width: 100%;
     padding: .45em .25em;
     margin: 0 0 .55em 0;
-  }
-  #navigation ul.nav > li:after {
-    box-shadow: none;
   }
 }
 .form-item,

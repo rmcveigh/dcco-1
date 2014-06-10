@@ -7,7 +7,7 @@
 
 #navigation {
   width: 100%;
-
+  padding-top: 1em;
   ul {
     width:100%;
     list-style:none;
@@ -32,7 +32,14 @@
       border-right: none;
     }
   }
+  .nav-toggle{
+    text-decoration:none;
+    > .mobile-main-menu {
+      color: $white;
+    }
+  }
 }
+
 /* small screens */
 @media screen and (max-width: 640px) {
 
@@ -45,10 +52,6 @@
       width:100%;
       padding:.45em .25em;
       margin:0 0 .55em 0;
-
-      &:after {
-        box-shadow:none;
-      }
     }
   }
 }
