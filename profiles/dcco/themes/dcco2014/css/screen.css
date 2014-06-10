@@ -566,7 +566,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402065675') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402412636') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -639,6 +639,46 @@ body {
   padding: 1.33333em 15px 0.33333em;
 }
 
+#navigation {
+  width: 100%;
+}
+#navigation ul {
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+#navigation ul > li {
+  border-right: 1px solid #f0f0f0;
+  float: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  display: inline-block;
+}
+#navigation ul > li > a {
+  color: white;
+  text-decoration: none;
+  margin: 0 2em;
+}
+#navigation ul > li.last {
+  border-right: none;
+}
+
+/* small screens */
+@media screen and (max-width: 640px) {
+  #navigation ul.nav {
+    padding: 0 .5em;
+  }
+  #navigation ul.nav > li {
+    width: 100%;
+    padding: .45em .25em;
+    margin: 0 0 .55em 0;
+  }
+  #navigation ul.nav > li:after {
+    box-shadow: none;
+  }
+}
 .form-item,
 .form-actions {
   margin: 1.33333em 0;
