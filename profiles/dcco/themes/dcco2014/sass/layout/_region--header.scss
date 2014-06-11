@@ -11,27 +11,19 @@
   position: relative;
 
   //user menu
-
   ul.nav {
-    width:100%;
-    list-style:none;
-    text-align:right;
-
-    > li {
-      float: none;
-      text-transform:uppercase;
-      cursor:pointer;
-      text-align:center;
-      width: auto;
-      display: inline-block;
-
-      > a {
-        text-decoration:none;
-        margin: 0 1em;
-        font-size: 1em;
-      }
+      padding:0 .5em;
+      text-align: center;
     }
-  }
+
+    ul.nav > li {
+      width:100%;
+      padding:0.45em 0.25em;
+      margin:0 0 0.55em 0;
+    }
+    #block-system-user-menu {
+      width: 100%;
+    }
   .nav-toggle {
     text-decoration:none;
     color: $white;
@@ -41,6 +33,40 @@
     position: absolute;
     bottom: -41px;
     right: 50px;
+  }
+
+  // user menu large screens
+  @media only screen and (min-width: 640px) {
+    ul.nav {
+      width:100%;
+      list-style:none;
+      text-align:right;
+
+      > li {
+        float: none;
+        text-transform:uppercase;
+        cursor:pointer;
+        text-align:right;
+        width: auto;
+        display: inline-block;
+        padding: 0;
+
+        > a {
+          text-decoration:none;
+          margin: 0 1em;
+          font-size: 1em;
+        }
+      }
+    }
+    .mobile-user-menu {
+      display: none;
+      position: relative;
+      bottom: none;
+      right: none;
+    }
+    #block-system-user-menu {
+      width: auto;
+    }
   }
 }
 
@@ -85,25 +111,6 @@
     @include breakpoint($tablet, $no-query: '.lt-ie9') {
       @include adjust-font-size-to($fs-xl, 4);
       padding: rhythm(3, $fs-xl) rhythm(12, $fs-xl);
-    }
-  }
-}
-
-// user menu small screens
-@media screen and (max-width: 640px) {
-
-  #header {
-    ul.nav {
-      padding:0 .5em;
-    }
-
-    ul.nav > li {
-      width:100%;
-      padding:.45em .25em;
-      margin:0 0 .55em 0;
-    }
-    #block-system-user-menu {
-      width: 100%;
     }
   }
 }
