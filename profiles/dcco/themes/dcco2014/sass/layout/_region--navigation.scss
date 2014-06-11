@@ -5,6 +5,54 @@
 
 // For specific navigation element styles, see components/_nav.scss
 
-.region--navigation {
-  
+#navigation {
+  width: 100%;
+  padding: 1em 0;
+  ul.nav {
+    padding:0 0.5em;
+    width:100%;
+    list-style:none;
+    text-align:center;
+
+    > li {
+      width:100%;
+      padding:0.45em 0.25em;
+      margin:0 0 0.55em 0;
+      float: none;
+      text-transform:uppercase;
+      cursor:pointer;
+      text-align:center;
+    }
+
+    a {
+      color: $white;
+      text-decoration:none;
+      margin: 0 2em;
+    }
+  }
+  .nav-toggle{
+    text-decoration:none;
+    > .mobile-main-menu {
+      color: $white;
+    }
+  }
+
+  /* small screens */
+  @media only screen and (min-width: 640px) {
+    ul.nav {
+      padding: 0;
+      width: auto;
+
+      > li {
+        border-right: 1px solid rgba(255, 255, 255, 0.6);
+        padding: 0;
+        margin: 0;
+        width: auto;
+        display: inline;
+      }
+      > li.last {
+        border-right: none;
+      }
+    }
+  }
 }
