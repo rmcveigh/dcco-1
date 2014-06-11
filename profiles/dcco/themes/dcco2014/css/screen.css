@@ -652,7 +652,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402066865') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402412636') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -663,7 +663,7 @@ body {
   padding: 0.66667em 0 0.33333em;
   width: 100%;
   text-transform: uppercase;
-  background-color: rgba(0, 42, 44, 0.55);
+  background-color: rgba(0, 42, 44, 0.75);
   margin-top: -6px;
 }
 #footer #block-menu-menu-social-menu {
@@ -821,10 +821,6 @@ body {
   padding: 1.33333em 15px 0.33333em;
 }
 
-<<<<<<< HEAD
-.slick-loading .slick-list {
-  background-color: transparent !important;
-=======
 #navigation {
   width: 100%;
   padding: 1em 0;
@@ -871,7 +867,10 @@ body {
   #navigation ul.nav > li.last {
     border-right: none;
   }
->>>>>>> 07a4d89f8303ded272b48e8a037083396798672d
+}
+
+.slick-loading .slick-list {
+  background-color: transparent !important;
 }
 
 .form-item,
